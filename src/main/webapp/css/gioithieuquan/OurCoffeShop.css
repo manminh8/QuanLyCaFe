@@ -1,0 +1,36 @@
+@charset "UTF-8";
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fffaf3;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  line-height: 1.6;
+}
+
+.logo-img {
+  width: 200px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #6b4c3b;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}

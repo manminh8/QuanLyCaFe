@@ -1,0 +1,194 @@
+@charset "UTF-8";
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #222;
+}
+
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background: #3c1f0d; 
+    color: white; 
+    padding: 16px 32px; 
+  } 
+   
+  header .logo { 
+    font-family: 'Brush Script MT', cursive; 
+    font-size: 28.8px; 
+  } 
+   
+  header nav a { 
+    margin-left: 32px; 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+  } 
+
+.logo {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 28px;
+}
+
+
+
+.cart-container {
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+}
+
+.cart {
+  width: 65%;
+}
+
+.cart h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+}
+
+.product img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  border-radius: 15px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.remove {
+  color: #999;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.total {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.back-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid #3a1f0d;
+  background: white;
+  border-radius: 20px;
+  color: #3a1f0d;
+  cursor: pointer;
+}
+
+.payment {
+  background-color: #3a1f0d;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 25%;
+  height: fit-content;
+}
+
+.payment h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.payment button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  background: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.payment button img {
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+footer { 
+    background: #3c1f0d; 
+    color: white;
+    padding: 32px 16px; 
+    margin-top: 48px; 
+  } 
+   
+  .footer-top { 
+    margin-bottom: 32px; 
+    margin-left: 32px; 
+    margin-top: 0;
+  } 
+   
+  .footer-top .logo { 
+    font-family: 'Brush Script MT', cursive; 
+    font-size: 50px; 
+    margin-bottom: 4.8px; 
+  } 
+  .copyright{
+    margin-left: 32px; 
+  }
+   
+  .footer-links { 
+    display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin: 30px 0;
+  width: 100%;
+  } 
+   
+  .footer-btn { 
+  background: white;
+  color: #3c1f0d;
+  border: none;
+  padding: 9.6px 40px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 20px; 
+  min-width: 200px; 
+  text-align: center;
+  } 
+  
+
+
+
+  .footer-btn:hover { 
+    background: #e2e2e2; 
+  } 
+   
+  footer p { 
+    font-size: 10px; 
+  }
