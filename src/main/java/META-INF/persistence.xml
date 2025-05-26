@@ -3,6 +3,7 @@
 	<persistence-unit name="QuanLyCaFe" transaction-type="RESOURCE_LOCAL">
 		<class>model.KhoHang</class>
 		<class>model.SanPham</class>
+		<class>model.TaiKhoanNguoiDung</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/qlcf"/>
