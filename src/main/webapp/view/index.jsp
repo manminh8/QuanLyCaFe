@@ -12,7 +12,7 @@
     <header>
         <a href="../view/index.jsp" class="logo"> Coffee Shop </a>
         <nav>
-            <a href="product/page1.jsp">Products</a>
+            <a href="product/page1.jsp">Sản phẩm</a>
             <a href="../view/shoppingcart/shopping_cart.jsp">Checkout</a>
             <a href="../view/xulyphanlogin/login.jsp">Login</a>
         </nav>

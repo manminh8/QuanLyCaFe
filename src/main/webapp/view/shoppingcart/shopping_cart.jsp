@@ -14,7 +14,7 @@
 </head>
 <body>
 	<header>
-		 <a href="../index.jsp" class="logo"> Coffee Shop </a>
+		<a href="../index.jsp" class="logo"> Coffee Shop </a>
 		<nav>
 			<a href="../product/page1.jsp">Sản phẩm</a> <a href="#">Thanh
 				toán</a>
@@ -88,10 +88,24 @@
 			<div class="cart-actions">
 				<button onclick="window.location.href='../product/page1.jsp'"
 					class="continue-shopping">Tiếp tục mua hàng</button>
+				<%
+				Object user = session.getAttribute("user");
+				if (user != null) {
+				%>
 				<form action="<%=request.getContextPath()%>/checkout" method="post"
 					style="display: inline;">
 					<button type="submit" class="checkout">Thanh toán</button>
 				</form>
+				<%
+				} else {
+				%>
+				<p>
+					Bạn cần <a href="../xulyphanlogin/login.jsp">đăng nhập</a> để thanh
+					toán.
+				</p>
+				<%
+				}
+				%>
 			</div>
 			<%
 			} else {
@@ -113,7 +127,7 @@
 		<p class="copyright">© 2023 All Rights Reserved</p>
 	</footer>
 
-<script>
+	<script>
 let updateTimeout = null;
 
 // Hàm format tiền tệ VND
