@@ -16,8 +16,7 @@
 	<header>
 		<a href="../index.jsp" class="logo"> Coffee Shop </a>
 		<nav>
-			<a href="../product/page1.jsp">Sản phẩm</a> <a href="#">Thanh
-				toán</a>
+			<a href="../product/page1.jsp">Sản phẩm</a>
 		</nav>
 	</header>
 
