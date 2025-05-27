@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="logo"><a href="index.jsp"> Coffee Shop </a></div>
+        <a href="../view/index.jsp" class="logo"> Coffee Shop </a>
         <nav>
             <a href="product/page1.jsp">Products</a>
             <a href="../view/shoppingcart/shopping_cart.jsp">Checkout</a>

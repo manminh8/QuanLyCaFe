@@ -13,7 +13,7 @@
 <body>
 
   <header>
-        <div class="logo">Coffee Shop</div>
+          <a href="../index.jsp" class="logo"> Coffee Shop </a>
         <nav>
             <a href="../product/product1.jsp">Products</a>
             <a href="../shoppingcart/shopping_cart.jsp">Checkout</a>
@@ -32,7 +32,12 @@
                     It offers a deep coffee flavour with a hint of creaminess and a smooth, lingering finish.</p>
                 <div class="price-cart">
                     <div class="price">45.000₫</div>
-                    <button class="btn">Add to Cart</button>
+                    <form action="<%=request.getContextPath()%>/cart" method="post">
+						<input type="hidden" name="action" value="add" /> 
+						<input	type="hidden" name="maSanPham" value="4" /> 
+							<input type="hidden" name="soLuong" value="1"/>
+						<button class="btn" type="submit">Thêm vào giỏ hàng</button>
+					</form>
                 </div>
             </div>
         </div>
@@ -45,7 +50,12 @@
                     It delivers a creamy body, subtle sweetness, and a gentle, mellow coffee flavour.</p>
                 <div class="price-cart">
                     <div class="price">50.000₫</div>
-                    <button class="btn">Add to Cart</button>
+                    <form action="<%=request.getContextPath()%>/cart" method="post">
+						<input type="hidden" name="action" value="add" /> 
+						<input	type="hidden" name="maSanPham" value="5" /> 
+							<input type="hidden" name="soLuong" value="1"/>
+						<button class="btn" type="submit">Thêm vào giỏ hàng</button>
+					</form>
                 </div>
             </div>
         </div>
@@ -58,7 +68,12 @@
                     It offers a light sweetness with nutty undertones and a melt-in-the-mouth finish.</p>
                 <div class="price-cart">
                     <div class="price">45.000₫</div>
-                    <button class="btn">Add to Cart</button>
+                    <form action="<%=request.getContextPath()%>/cart" method="post">
+						<input type="hidden" name="action" value="add" /> 
+						<input	type="hidden" name="maSanPham" value="6" /> 
+							<input type="hidden" name="soLuong" value="1"/>
+						<button class="btn" type="submit">Thêm vào giỏ hàng</button>
+					</form>
                 </div>
             </div>
         </div>

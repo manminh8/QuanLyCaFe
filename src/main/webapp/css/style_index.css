@@ -21,6 +21,8 @@ body {
   header .logo { 
     font-family: 'Brush Script MT', cursive; 
     font-size: 28.8px; 
+    text-decoration: none;
+    color: white;
   } 
    
   header nav a { 

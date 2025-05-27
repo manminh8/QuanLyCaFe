@@ -13,7 +13,7 @@ public class HibernateManager {
     private HibernateManager() {
         try {
             // Khởi tạo EntityManagerFactory (chỉ 1 lần duy nhất)
-            emf = Persistence.createEntityManagerFactory("QuanLyQuanCAFE");
+            emf = Persistence.createEntityManagerFactory("QuanLyCaFe");
             em = emf.createEntityManager();
         } catch (Exception e) {
             e.printStackTrace();

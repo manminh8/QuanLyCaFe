@@ -1,60 +1,79 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffee Shop - Sign In</title>
-    <link rel="stylesheet" href="../../css/xulylogin/style_login.css" />
-    
+<meta charset="UTF-8">
+<title>Đăng nhập</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-
 <body>
-    <header>
-        <div class="logo"> <a href="../index.jsp"> Coffee Shop</a></div>
-        <nav>
-            <a href="#">Products</a>
-            <a href="#">Checkout</a>
-        </nav>
-    </header>
+	<div class="container mt-5">
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header">
+						<h3 class="text-center">Đăng nhập</h3>
+					</div>
+					<div class="card-body">
+						<%
+						if (request.getAttribute("error") != null) {
+						%>
+						<div class="alert alert-danger">
+							<%=request.getAttribute("error")%>
+						</div>
+						<%
+						}
+						%>
 
-    <main>
-        <h1>Sign in</h1>
-        <form class="login-box">
-            <p><span class="required">*</span> indicates required field</p>
-            <input type="text" placeholder="*  Username or email address" required />
-            <input type="password" placeholder="*  Password" required />
+						<%
+						if (request.getAttribute("message") != null) {
+						%>
+						<div class="alert alert-success">
+							<%=request.getAttribute("message")%>
+						</div>
+						<%
+						}
+						%>
 
-            <div class="remember">
-                <input type="checkbox" id="keep-signed-in" />
-                <label for="keep-signed-in">Keep me signed in</label>
-            </div>
-            
-            <a href="forgotPass.jsp" class="forgotpass">Forgot your password?</a> <br>
-            <a href="createAccount.jsp" class="createAccount">You don't have an account yet?</a>
-            <button type="submit" class="signin-btn">Sign in</button>
-        </form>
-    </main>
+						<form action="${pageContext.request.contextPath}/dangnhap"
+							method="post">
+							<div class="form-group">
+								<label for="username">Tài khoản đăng nhập:</label> <input
+									type="text" class="form-control" id="username" name="username"
+									required>
+							</div>
 
-    <footer>
-        <div class="footer-top">    
-            <div class="logo">Coffee Shop</div>  
-            <p>one Stop | one Heart | one Cup</p>
-           
-        </div>
+							<div class="form-group">
+								<label for="password">Mật khẩu:</label> <input type="password"
+									class="form-control" id="password" name="password" required>
+							</div>
 
-  <div class="footer-links">
-  
-  <a href="../GioiThieu_Quan/OurCoffeeShop.jsp" class="footer-btn">Our Coffee Shop</a>
-    <a href="../GioiThieu_Quan/OurCoffeBeans.jsp" class="footer-btn">Our Coffee Beans</a>
-    <a href="../GioiThieu_Quan/OurPastry.jsp" class="footer-btn">Our Pastry</a>
-  
-</div>
-        <p class="copyright">© 2023 All Rights Reserved</p>
-    </footer>
-     
+							<div class="form-group">
+								<div class="row">
+									<div class="col">
+										<a href="createAccount.jsp">Đăng ký tài khoản mới</a>
+									</div>
+									<div class="col text-right">
+										<a href="forgotPass.jsp">Quên mật khẩu?</a>
+									</div>
+								</div>
+							</div>
+
+							<button type="submit" class="btn btn-primary btn-block">Đăng
+								nhập</button>
+							<div class="mt-3 text-center">
+								<a href="${pageContext.request.contextPath}/view/index.jsp"
+									class="btn btn-secondary btn-block"> <i class="fas fa-home"></i>
+									Quay về trang chủ
+								</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
-    
 </html>
